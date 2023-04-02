@@ -27,7 +27,7 @@ public class SQSConfiguration {
         BasicAWSCredentials credentials = new BasicAWSCredentials(accessKey, secretKey);
         return AmazonSQSAsyncClientBuilder
                 .standard()
-                .withRegion("us-east-1")
+                .withRegion("sa-east-1")
                 .withCredentials(new AWSStaticCredentialsProvider(credentials))
                 .build();
     }

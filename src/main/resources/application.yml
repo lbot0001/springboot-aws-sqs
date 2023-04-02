@@ -1,12 +1,12 @@
 cloud:
   aws:
     region:
-      static: region-name
+      static: sa-east-1
       auto: false
     stack:
       auto: false
     credentials:
-      access-key: access-key
-      secret-key: secret-key
+      access-key: AKIAQBB4VHNXTDTXKCZC
+      secret-key: 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
     end-point:
-      uri: end-point-uri
+      uri: https://sqs.sa-east-1.amazonaws.com/002274704239/MyFIFOQueue.fifo

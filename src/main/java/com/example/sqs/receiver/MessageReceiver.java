@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Slf4j
-public class MessageReceiver
+public class MessageReceiver{
 
     @SqsListener(value = "MyFIFOQueue.fifo", deletionPolicy = SqsMessageDeletionPolicy.ON_SUCCESS)
     public void receive(String message){
